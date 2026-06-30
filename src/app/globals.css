@@ -47,7 +47,7 @@ body {
 .flip-book-wrapper {
   filter: drop-shadow(0 25px 60px rgba(0, 0, 0, 0.7));
   mask-image: none !important;
-  padding-top: 10px;
+  padding-top: 2rem;
 }
 
 /* Remove vignette/shadow effects from HTMLFlipBook library */
