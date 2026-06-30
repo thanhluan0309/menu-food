@@ -46,4 +46,25 @@ body {
 
 .flip-book-wrapper {
   filter: drop-shadow(0 25px 60px rgba(0, 0, 0, 0.7));
+  mask-image: none !important;
+}
+
+/* Remove vignette/shadow effects from HTMLFlipBook library */
+.ff-wrapper,
+.flipbook,
+.book,
+.ff-wrapper > * {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Override any vignette gradients */
+.ff-wrapper::before,
+.ff-wrapper::after,
+.flipbook::before,
+.flipbook::after,
+.book::before,
+.book::after {
+  display: none !important;
 }

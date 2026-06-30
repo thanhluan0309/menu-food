@@ -139,14 +139,14 @@ export default function MenuBook() {
   const pageWidth = isMobile
     ? Math.floor(w * 0.94)
     : isTablet
-    ? Math.min(Math.floor(w * 0.44), 400)
-    : Math.min(Math.floor(w * 0.41), 460);
+    ? Math.min(Math.floor(w * 0.50), 480)
+    : Math.min(Math.floor(w * 0.48), 540);
 
   const pageHeight = isMobile
     ? Math.floor(h * 0.72)
     : isTablet
-    ? Math.min(Math.floor(h * 0.80), 680)
-    : Math.min(Math.floor(h * 0.83), 740);
+    ? Math.min(Math.floor(h * 0.85), 740)
+    : Math.min(Math.floor(h * 0.90), 840);
 
   return (
     <div
@@ -182,7 +182,7 @@ export default function MenuBook() {
           width={pageWidth}
           height={pageHeight}
           showCover
-          drawShadow
+          drawShadow={false}
           flippingTime={FLIP_MS}
           usePortrait={isMobile}
           startPage={0}
@@ -192,11 +192,10 @@ export default function MenuBook() {
           maxHeight={pageHeight}
           onFlip={handleFlip}
           onChangeState={handleChangeState}
-          className="shadow-2xl"
+          className=""
           style={{}}
           startZIndex={20}
           autoSize={false}
-          maxShadowOpacity={0.45}
           mobileScrollSupport
           swipeDistance={30}
           clickEventForward={false}

@@ -7,7 +7,7 @@ export const restaurantInfo: RestaurantInfo = {
   name: "Bếp Lửa Hồng",
   slogan: "Hương vị thịt nướng — Kết nối yêu thương",
   address: "123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh",
-  phone: "028 3822 1234",
+  phone: "0XX XXXX XXXX",
   hours: "10:00 — 22:00 (Thứ 2 — Chủ Nhật)",
 };
 
