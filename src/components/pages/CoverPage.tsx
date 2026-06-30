@@ -4,7 +4,10 @@ import { restaurantInfo } from "@/data/menuData";
 
 export default function CoverPage() {
   return (
-    <div className="w-full h-full relative flex flex-col items-center justify-center overflow-hidden bg-[#0d0500]" style={{ borderRadius: 12 }}>
+    <div
+      className="w-full h-full relative flex flex-col items-center justify-center overflow-hidden bg-[#0d0500]"
+      style={{ borderRadius: 12 }}
+    >
       {/* Background BBQ image */}
       <Image
         src="https://images.unsplash.com/photo-1558030006-450675393462?w=960&q=75&auto=format&fit=crop"
@@ -37,12 +40,6 @@ export default function CoverPage() {
       {/* Content */}
       <div className="relative z-10 text-center px-8 flex flex-col items-center gap-3">
         {/* Flame icon with glow */}
-        <div
-          className="text-5xl"
-          style={{ filter: "drop-shadow(0 0 16px #ff6b35)" }}
-        >
-          🔥
-        </div>
 
         {/* Restaurant name */}
         <h1
